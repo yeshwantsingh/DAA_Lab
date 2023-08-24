@@ -36,7 +36,6 @@ void printArray(int arr[], int size)
 	printf("\n");
 }
 
-// Driver program to test above functions
 int main()
 {
 	int arr[] = {64, 25, 12, 22, 11};
