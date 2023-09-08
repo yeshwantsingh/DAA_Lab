@@ -1,5 +1,29 @@
 #include<stdio.h>
 
+void d_c(int[][] a, int[][] b, int[][] c, int r1, int r2,
+ int c1, int c2, int r3, int r4, int c3, int c4)
+ {
+     if(r1 == r2 && c1 == c2 && r3 == r4 && c3 == c4)
+          c[r1][c3] = a[r1][c1] * b[r3][c3]
+
+     r = a*e + b*g
+     r = d_c(a, b, c, r1, (r1+r2)/2, c1, (c2+c1)/2, r3, (r4+r3)/2, c3, (c4+c3)/2) + 
+        d_c(a, b, r1, (r1+r2)/2, (c2+c1)/2, c2, (r4+r3)/2, r4, c3, (c4+c3)/2)
+
+     s = a*f + b*h
+     s = d_c(a, b, c, r1, (r1+r2)/2, c1, (c2+c1)/2, r3, (r4+r3)/2, (c4+c3)/2, c4) + 
+        d_c(a, b, r1, (r1+r2)/2, (c2+c1)/2, c2, (r4+r3)/2, r4, (c4+c3)/2, c4)
+
+     t = c*e + d*g
+     t = d_c(a, b, c, (r1+r2)/2, r2, c1, (c2+c1)/2, r3, (r4+r3)/2, c3, (c4+c3)/2) + 
+        d_c(a, b, (r1+r2)/2, r2, (c2+c1)/2, c2, (r4+r3)/2, r4, c3, (c4+c3)/2)
+
+     u = c*f + d*h 
+     u = d_c(a, b, c, (r1+r2)/2, r2, c1, (c2+c1)/2, r3, (r4+r3)/2, (c4+c3)/2, c4) + 
+        d_c(a, b, (r1+r2)/2, r2, (c2+c1)/2, c2, (r4+r3)/2, r4, (c4+c3)/2, c4)
+
+ }
+
 int main(){
   int a[2][2],b[2][2],c[2][2],i,j;
   int m1,m2,m3,m4,m5,m6,m7;
