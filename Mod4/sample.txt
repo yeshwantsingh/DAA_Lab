@@ -1,0 +1,8 @@
+Sample text to test huffman coding
+
+// Opening input file in read-only mode
+int fd1 = open(“sample.txt”, O_RDONLY);
+if (fd1 == -1) {
+	perror("Open Failed For Input File:\n");
+	exit(1);
+}
